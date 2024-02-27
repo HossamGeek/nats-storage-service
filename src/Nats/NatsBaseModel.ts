@@ -686,10 +686,6 @@ export default class NatsBaseModel implements NatsModel {
         (await pickASection.get(keyName)) &&
         (await pickASection.get(keyName)).operation != 'PURGE'
       ) {
-        console.log(
-          '🚀 ~ file: NatsBaseModel.ts:465 ~ deleteSection ~ await pickASection.get(keyName):',
-          await pickASection.get(keyName),
-        );
         await pickASection.purge(keyName);
         return { ...NatsResponseCode[2005] };
       }

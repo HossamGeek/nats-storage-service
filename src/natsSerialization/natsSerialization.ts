@@ -6,10 +6,10 @@ export class NatsSerialization {
   /**
    * Serializes the given data into a Uint8Array.
    *
-   * @param {any} data - the data to be serialized
+   * @param {object} data - the data to be serialized
    * @return {Uint8Array} the serialized Uint8Array
    */
-  serialization(data: any): Uint8Array {
+  serialization(data: object): Uint8Array {
     return StringCodec().encode(JSON.stringify(data));
   }
   /**

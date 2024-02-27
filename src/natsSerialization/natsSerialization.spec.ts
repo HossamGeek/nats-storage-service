@@ -16,7 +16,7 @@ describe('NatsSerialization', () => {
     expect(convertor).toBeDefined();
   });
 
-  it('should convert from service to Uint8Array', () => {
+  it('should convert from object to Uint8Array', () => {
     const data = { foo: 'bar' };
     const result = convertor.serialization(data);
 
@@ -24,7 +24,7 @@ describe('NatsSerialization', () => {
     expect(result).toBeInstanceOf(Uint8Array);
   });
 
-  it('should convert from Uint8Array to service', () => {
+  it('should convert from Uint8Array to object', () => {
     const data = Uint8Array.from([
       123, 34, 102, 111, 111, 34, 58, 34, 98, 97, 114, 34, 125,
     ]);

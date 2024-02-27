@@ -109,11 +109,11 @@ export class Service{
   /**
    * Serializes the given data into a Uint8Array.
    *
-   * @param {any} data - the data to be serialized
+   * @param {object} data - the data to be serialized
    * @return {Uint8Array} the serialized Uint8Array
    */
   
-  serialization(data: any): Uint8Array
+  serialization(data: object): Uint8Array
 
   /**
     * Deserialize the given Uint8Array data to an object.
