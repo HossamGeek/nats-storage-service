@@ -122,11 +122,11 @@ export class Service{
     * @return {object} The deserialized object
     */
 
-    deserialization(data: Uint8Array): object 
+  deserialization(data: Uint8Array): object 
 ```
 
 
-## For How to use it check 
+## For How to use it 
 
 - check NatsBaseModel.spec.ts file  for more examples of how to use this class.
 
