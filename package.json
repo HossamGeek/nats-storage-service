@@ -1,6 +1,6 @@
 {
   "name": "nats-storage-service",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "nats-storage-service as class, which is responsible for interfacing with NATS JetStream for model operations, including model creation, updating, deletion, and data manipulation within models",
   "author": "",
   "private": true,
